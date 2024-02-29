@@ -1,6 +1,7 @@
 # GeoProg_MIST2024
 วิศวกรรมสำรวจ ไม่ได้มีแค่ส่องกล้องนะโว้ยยยยยยยย
 
+![LINE_ALBUM_วันที่ 2 (ชุดที่ 2)_231206_258](https://github.com/lookmeebbear/GeoProg_MIST2024/assets/88705136/f052cadb-0b72-4c62-a1f3-37b192aefde7)
 
 
 หัวข้อบรรยาย (17, 24 และ 31 มกราคม 2567)
