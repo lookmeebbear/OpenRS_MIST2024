@@ -1,4 +1,4 @@
-# OpenRS_MIST2024
+# GeoProg_MIST2024
 วิศวกรรมสำรวจ ไม่ได้มีแค่ส่องกล้องนะโว้ยยยยยยยย
 
 ![LINE_ALBUM_วางแปลง ปากพนังฝั่งตะวันออก (บังหยาถ่า_231206_111](https://github.com/lookmeebbear/OpenRS_MIST2024/assets/88705136/aa77c027-a415-4443-8c74-e191c38ebdb0)
