@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>	
+	<title> Freshy So Sexy </title>
+	<h1> FRESHY SO SEXY CODING SHOW </h1>
+	<h3> Department of Survey Engineering </h3>
+	<h3> Chulalongkorn University </h3>
+	<h3> --------------------------------------  </h3>
+
+</head>
+
+<body>
+	<script type="text/javascript">
+		alert('หิวข้าววววววววววววววววววว')
+
+		/**
+		Thepchai Srinoi
+		Survey Engineering .. Chulalongkorn University
+		January 2024
+		**/
+
+		// Intro to Javascript
+		console.log("Show my name ... ");
+
+		var myname = 'FRESHY' ;
+		var hername = 'LINZY' ;
+		console.log( hername );
+		document.write( myname + "<br>")
+
+		var x = 2;
+		var y = 3;
+		console.log(x+y, x-y, x*y, x/y, x%y) ;
+
+		document.write(x+y, x-y + '&nbsp;' + x*y) ;
+		document.write(" HI JEAB JEAB" + "<br>");
+
+		console.log( x < y );
+		document.write( x >= y , "<br>");
+
+		document.write('----------------------' + "<br>")
+
+		// If else : condition
+		var ndvi = 0.2 ;
+		document.write( "NDVI = " + ndvi + "<br>")
+
+		if (ndvi > 0.5) {
+			document.write("PLANTTTTTTTTTTTT" + "<br>")
+		}
+		else if (ndvi > -0.5){
+			document.write("I DON'T KNOWWWWWW" + "<br>")
+		}
+		else {
+			document.write("WATERRRRRRRRRRRRRRR" + "<br>")
+		}
+
+		document.write('----------------------' + "<br>")
+
+		// FOR-LOOP 
+		var dem = [
+			[10, 11, 12, 11, 15],
+			[12, 13, 13, 20, 23],
+			[13, 10, 9, 12, 34],
+		] ;
+
+		document.write( "count row : "+ dem.length + "<br>");
+		document.write( "count column : "+ dem[1].length + "<br>");
+
+		for (var row = 0 ; row < dem.length ; row++) {
+			for (var col = 0 ; col < dem[row].length ; col ++) {
+				document.write(dem[row][col] + " ");
+			}
+			document.write("<br>");
+		}
+
+		document.write('----------------------' + "<br>")
+
+		// WHILE LOOP
+		var i = 0;
+		while (i < 8){
+			document.write("Now i = "+ i + "<br>");
+			i++;
+		}
+		document.write("มันจบแล้วครับนาย" + "<br>")
+
+		var j = 0;
+		do {
+			document.write("Now j = "+ j + "<br>");
+			j++;
+		} while (j < 8);
+
+		document.write("มันจบแล้วครับนาย" + "<br>")
+
+		document.write('----------------------' + "<br>")
+
+		// FUNCTION AND CLASS
+		function Area(w,h) {
+			let area;
+			area = w*h;
+			return area;
+		}
+
+		document.write( "Your Area = ", Area(100,150) , "<br>");
+
+		document.write('----------------------' + "<br>")
+		
+		class CUALLSTAR {
+			constructor(name) {
+				this.name = name ;
+			}
+
+			check(){
+				document.write(">> I'm hereeeeeee <<" + "<br>");
+			}
+		}
+		var man = new CUALLSTAR( "Peem" ) ;
+		document.write(man.name + "<br>") ;
+		man.check();
+		document.write('----------------------' + "<br>")
+
+		var mypolygon = {
+				"type": "FeatureCollection",
+				"name": "Building",
+				"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+				"features": [
+				{ "type": "Feature", "properties": { "fid": 9, "Name": "อาคารชาร์ลเอมสัน เกเวอร์ต", "h": 15.987461663515655}, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 100.532399706, 13.736248581 ], [ 100.532019704, 13.736303882 ], [ 100.532041639, 13.736443883 ], [ 100.532422915, 13.736388575 ], [ 100.532399706, 13.736248581 ] ] ] ] } },
+				{ "type": "Feature", "properties": { "fid": 10, "Name": "อาคารที่พักอาจารย์วิศวกรรมไฟฟ้า", "h": 9.09}, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 100.532293299, 13.736247374 ], [ 100.532383682, 13.736233733 ], [ 100.532365687, 13.736111769 ], [ 100.532274026, 13.736124795 ], [ 100.532293299, 13.736247374 ] ] ] ] } },
+				{ "type": "Feature", "properties": { "fid": 11, "Name": "ห้องสมุดอิเล็กทรอนิกส์และไมโครคอมพิวเตอร์", "h": 13.375261663515653}, "geometry": { "type": "MultiPolygon", "coordinates": [ [ [ [ 100.532267892, 13.736259365 ], [ 100.532243961, 13.736106297 ], [ 100.532108361, 13.736122709 ], [ 100.532131034, 13.736278277 ], [ 100.532267892, 13.736259365 ] ] ] ] } },]
+			}
+
+			// Building Ellipsoidal Height
+			var report = mypolygon.features.map( (item) => {
+					let bname = item.properties.Name;
+					let hae = item.properties.h;
+					return { name : bname, HAE : parseInt(hae)};
+				});
+
+			console.log(report)
+			
+			var bd = mypolygon.features.filter( (item) => {
+					return item.properties.h > 10
+					});
+			console.log( bd )
+
+			var bdSUM = bd.reduce( (sum,item) => {
+				return sum + item.properties.h
+				},0);
+			console.log(bdSUM)
+			
+
+			
+			document.write('ชื่ออาคารและความสูงของอาคาร' + "<br>")
+
+			df = mypolygon.features
+			for (var b in df) {
+				document.write(df[b].properties.Name + ' ' +
+					(df[b].properties.h).toFixed(3) + "<br>")
+				
+			}
+	</script>
+</body>
+
+
+
