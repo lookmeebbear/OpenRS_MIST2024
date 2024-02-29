@@ -1,7 +1,7 @@
 # GeoProg_MIST2024
 วิศวกรรมสำรวจ ไม่ได้มีแค่ส่องกล้องตากแดดนะโว้ยยยยยยยย
 
-![image](https://github.com/lookmeebbear/GeoProg_MIST2024/assets/88705136/de67028d-8b00-4559-9cf7-c1b51a0cc032)
+![image](https://github.com/lookmeebbear/GeoProg_MIST2024/assets/88705136/56ab5630-7f4e-4255-9c24-b064b479a229)
 
 หัวข้อบรรยาย (17, 24 และ 31 มกราคม 2567)
 
